@@ -1,19 +1,28 @@
 @font-face {
+    
+    ascent-override: 125%;
+    descent-override: 25%;
+    line-gap-override: 0%;
     font-family: 'Oswald';
     src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf') format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: 'OswaldLite';
     src: url('../fonts/Oswald/static/Oswald-Light.ttf') format("truetype");
-    color: blue;
   }
 body{
     background-color: black;
     color: #ffffff;
-    font-family: "Oswald", Arial;
+    font-family: "OswaldLite", Arial;
 
 }
 h1{
-    font-family: "OswaldLite";
+    font-family: "Oswald";
     
 }
+section{
+    min-height: 400px;
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px; /* Acts as a placeholder size in lieu of rendered content.*/
+  }
