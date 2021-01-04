@@ -12,7 +12,7 @@
     src: url('../fonts/Oswald/static/Oswald-Light.ttf') format("truetype");
   }
 body{
-    background-color: black;
+    background-color: #353434;
     color: #ffffff;
     font-family: "OswaldLite", Arial;
 
