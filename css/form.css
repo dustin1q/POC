@@ -2,6 +2,9 @@
     max-width: 300px;
     background-color: #8a8585;
     padding: 10px;
+   /* display: grid;
+    place-items: center;*/
+
 }
 
 button#sign-up {
@@ -43,11 +46,7 @@ button#sign-up {
     color: #ffffff;
   }
   
-  div#password-constraints {
-    font-weight: 300;
-    margin: 5px 0 0 0;
-    font-size: 20px;
-  }
+ 
   
 
   
@@ -73,15 +72,7 @@ button#sign-up {
     font-weight: 400;
     margin: 0 0 3px 0;
   }
-  
 
-  
-
-  
-
-  
-  
-  
   select {
     background-color: white;
     border: 1px solid #ccc;
@@ -135,11 +126,11 @@ button#sign-up {
     
   
     form section {
-      margin: 0 0 25px 0;
+      margin: 0 0 10px 0;
     }
   
     form section:last-of-type {
-      margin: 0 0 50px 0;
+      margin: 0 0 25px 0;
     }
     
     select {
