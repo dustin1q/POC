@@ -1,3 +1,23 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+
 @font-face {
     
     ascent-override: 125%;
@@ -17,12 +37,41 @@ body{
     font-family: "OswaldLite", Arial;
 
 }
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ul{
+    display: block;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 h1{
     font-family: "Oswald";
     
 }
 section{
-    min-height: 400px;
+    
     content-visibility: auto;
     contain-intrinsic-size: 1000px; /* Acts as a placeholder size in lieu of rendered content.*/
+    /*https://web.dev/content-visibility/*/
+  }
+
+
+  #gallery {
+    scroll-snap-type: x mandatory;
+    width: 300px;
+    overflow-x: scroll;
+    display: flex;
+  }
+  
+  #gallery img {
+     scroll-snap-align: center;
   }
