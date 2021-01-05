@@ -1,4 +1,9 @@
-
+/*Min Max Clamp stuff*/
+.card-holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
   .visual {
     height: 100px;
     width: 100%;
@@ -8,16 +13,19 @@
   }
   
   .card {
-    width: clamp(23ch, 20%, 46ch);
-    display: flex;
-    flex-direction: column;
+    
+   
     background-color: #8a8585;
     padding: 1rem;
     margin: auto;
-
-    
     border: 1px solid #141414;
-    padding: 10px;
-    
+    padding: 10px;  
+    min-width: 200px;
+  }
+  #card1 {
+    width: clamp(23ch, 20%, 46ch);    
+  }
+  #card2 {
+    height: clamp(23ch, 20%, 23ch); 
   }
   
