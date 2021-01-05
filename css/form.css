@@ -1,14 +1,13 @@
 #form-container{
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
     background-color: #8a8585;
-    padding: 10px;
-   /* display: grid;
-    place-items: center;*/
+    padding: 1rem;
+    margin: auto;
     
-  margin: auto;
-  width: 60%;
-  border: 1px solid #141414;
-  padding: 10px;
+    border: 1px solid #141414;
+    padding: 10px;
 
 }
 
