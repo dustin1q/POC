@@ -39,30 +39,20 @@ button#sign-up {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 20px; /* fallback */
-    font-size: var(--small-mobile-font-size);
-    font-weight: 300;
-    padding: 0;
-    /* Display at the top right of the password section */
-    position: absolute;
-    top: 0;
-    right: 3px;
     color: #ffffff;
+    flex: 1;
   }
   
- 
-  
-
+  #form-container section{
+    flex-direction:row-reverse;
+    margin: 10px 0px 10px 0px;
+  }
   
   input {
     border: 1px solid #ccc;
-    font-size: 22px; /* fallback */
-    font-size: var(--large-mobile-font-size);
-    padding: 12px;
-    width: 90%; /* fallback */
-    width: 100%; /* full width minus padding */
+    padding: 10px;
+    width: 90%; 
     background-color: rgb(255, 255, 255);
-    
   }
   
   input:not(:focus):invalid {
@@ -107,78 +97,7 @@ button#sign-up {
   }
   
   
-  @media (min-width: 400px) {
-    
-    button#sign-up {
-      font-size: 22px; /* fallback */
-      font-size: var(--large-mobile-font-size);
-    }
+
   
-    button#toggle-password {
-      font-size: 22px; /* fallback */
-      font-size: var(--large-mobile-font-size);
-    }
-  
-    div.explanation {
-      font-size: 16px;
-    }
- 
-  
-    input {
-      font-size: 22px; /* fallback */
-      font-size: var(--large-mobile-font-size);
-    }
-  
-    label {
-      font-size: 22px; /* fallback */
-      font-size: var(--large-mobile-font-size);
-      margin: 0 0 5px 0;
-    }
-  
-    
-  
-    form section {
-      margin: 0 0 10px 0;
-    }
-  
-    form section:last-of-type {
-      margin: 0 0 25px 0;
-    }
-    
-    select {
-      font-size: 22px; /* fallback */
-      font-size: var(--large-mobile-font-size);
-    }
-    
-    textarea {
-      font-size: 22px; /* fallback */
-      font-size: var(--large-mobile-font-size);
-    }
-  
-  }
-  
-  
-  @media (min-width: 500px) {
-  
-   
-    button {
-      font-size: 18px; /* fallback */
-      font-size: var(--desktop-font-size);
-    }
- 
-  
-    input {
-      font-size: 18px; /* fallback */
-      font-size: var(--desktop-font-size);
-    }
-  
-    label {
-      font-size: 18px; /* fallback */
-      font-size: var(--desktop-font-size);
-      margin: 0 0 6px 0;
-    }
-  
-    
-  
-  }
+
   

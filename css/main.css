@@ -36,6 +36,7 @@ body{
     color: #ffffff;
     font-family: "OswaldLite", Arial;
 
+
 }
 p{
     display: block;
@@ -58,12 +59,21 @@ h1 h2 h3 h4 h5 h6{
     font-family: "Oswald";
 }
 section{
-    
-    content-visibility: auto;
-    contain-intrinsic-size: 1000px; /* Acts as a placeholder size in lieu of rendered content.*/
-    /*https://web.dev/content-visibility/*/
-  }
+  width: 100%;
+}
+#page-content{
+  margin:0px 10px 0px 10px
+}
 
+#content-visible section{
+  content-visibility: auto;
+    contain-intrinsic-size: 500px; /* Acts as a placeholder size in lieu of rendered content.*/
+    /*https://web.dev/content-visibility/*/
+}
+#content-visible img{
+  width: 100%;
+  height: auto;
+}
 
 /* Navigation stuff, you know ... that same old unorder listMcgee ///////////// */
   nav{
@@ -99,7 +109,11 @@ nav li a {
   text-decoration: none;
 }
 /* Navigation stuff, ends       ///////////// */
-
+footer{
+  height: 35px;
+  background-color: rgb(92, 92, 92);
+  box-shadow: 0px 0px 3px 0px rgb(44, 44, 44);
+}
 
 /* I think I'll move this gallery stuff somewhere else later*/
   #gallery {
