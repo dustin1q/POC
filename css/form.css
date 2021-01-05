@@ -1,14 +1,13 @@
 #form-container{
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    background-color: #8a8585;
-    padding: 1rem;
-    margin: auto;
-    
-    border: 1px solid #141414;
-    padding: 10px;
-
+  width: 310px;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #8a8585;
+  border: 1px solid #141414;
+  padding: 10px;
+  resize: both;
 }
 
 button#sign-up {
@@ -67,6 +66,10 @@ button#sign-up {
   input:not(:focus):invalid {
     color: red;
     outline-color: red;
+  }
+  input:not(:focus):valid {
+    color: green;
+    outline-color: green;
   }
   
   label {

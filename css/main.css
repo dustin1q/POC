@@ -75,11 +75,10 @@ section{
     width: 310px;
     overflow-x: scroll;
     display: flex;
-
     margin: auto;
-  
-  border: 1px solid #141414;
-  padding: 10px;
+    border: 1px solid #141414;
+    padding: 10px;
+    resize: both;
   }
   
   #gallery img {
@@ -87,3 +86,10 @@ section{
      border: 1px solid #141414;
      margin: 5px;
   }
+
+  ::-webkit-resizer {
+    border: 2px solid #141414;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 2px 5px rgb(44, 44, 44);
+    outline: 2px dashed rgb(97, 100, 97);
+}
