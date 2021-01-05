@@ -54,9 +54,8 @@ ul{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-h1{
+h1 h2 h3 h4 h5 h6{
     font-family: "Oswald";
-    
 }
 section{
     
@@ -65,6 +64,8 @@ section{
     /*https://web.dev/content-visibility/*/
   }
 
+
+/* Navigation stuff, you know ... that same old unorder listMcgee ///////////// */
   nav{
 
     position:sticky;
@@ -97,6 +98,10 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+/* Navigation stuff, ends       ///////////// */
+
+
+/* I think I'll move this gallery stuff somewhere else later*/
   #gallery {
     background-color: #494949;
 
@@ -116,9 +121,11 @@ nav li a {
      margin: 5px;
   }
 
+
+
   ::-webkit-resizer {
     border: 2px solid #141414;
     background: rgb(255, 255, 255);
-    box-shadow: 0 0 2px 5px rgb(44, 44, 44);
+   /* box-shadow: 0 0 2px 5px rgb(44, 44, 44);*/
     outline: 2px dashed rgb(97, 100, 97);
 }
