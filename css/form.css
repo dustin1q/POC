@@ -8,6 +8,7 @@
   border: 1px solid #141414;
   padding: 10px;
   resize: both;
+  z-index: -1;
 }
 
 button#sign-up {
@@ -60,16 +61,20 @@ button#sign-up {
     padding: 12px;
     width: 90%; /* fallback */
     width: 100%; /* full width minus padding */
+    background-color: rgb(255, 255, 255);
     
   }
   
   input:not(:focus):invalid {
     color: red;
     outline-color: red;
+    /*background-color: rgb(230, 192, 175);*/
+    
   }
   input:not(:focus):valid {
     color: green;
     outline-color: green;
+    background-color: rgb(175, 230, 175);
   }
   
   label {

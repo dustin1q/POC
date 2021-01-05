@@ -49,12 +49,10 @@ a{
 }
 ul{
     display: block;
-    
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 h1{
     font-family: "Oswald";
@@ -67,7 +65,38 @@ section{
     /*https://web.dev/content-visibility/*/
   }
 
+  nav{
 
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(92, 92, 92);
+    box-shadow: 0px 0px 3px 0px rgb(44, 44, 44);
+    
+  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  
+  width: auto;
+  height: 35px;
+}
+nav li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  background: rgb(52, 53, 52);
+
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
   #gallery {
     background-color: #494949;
 

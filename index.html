@@ -9,17 +9,23 @@
 
 </head>
 <body>
-    <h1>Performance Testing Playground </h1>
-<p>Performance Testing modern CSS techniques</p>
+    <header>
+        <h1>Performance Testing Playground </h1>
+        <p>Performance Testing modern CSS techniques</p>
+        <p><i>fonts use ascent-override: % descent-override: % line—gap-override: % font-display: swap;</i></p>
+    </header>
+<nav>
 <ul><!--make sticky-->
-    <li>font-face <i>ascent-override: % descent-override: % line—gap-override: % font-display: swap;</i> </li>
+    <li>font-face  </li>
     <li>Content-visibility</li>
     <li>Portal tag best uses</li>
     <li>Min, max, clamp </li>
-    <li>Native validation</li>
+    <li>Sign-in form Best Practices</li>
+    <li>PWA</li>
 </ul>
+</nav>
 <hr>
-<h3>Native validation</h3>
+<h3>Sign-in form Best Practices </h3>
 <p>ref: <a href="https://web.dev/sign-up-form-best-practices/">here</a></p>
 <div id="form-container">
     <form action="#" method="post">     
@@ -27,20 +33,20 @@
         <section>        
         <label for="name">Full Name *</label>
         <input id="name" name="name" autocomplete="name" 
-                pattern="[\p{L}\.\- ]+" required>
+                pattern="[\p{L}\.\- ]+" required placeholder="Your name">
         </section>
         <section>        
         <label for="email">Email *</label>
         <input id="email" name="email" autocomplete="username"
-                type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email@youremail.com" >
         </section>
         <section>
             <label for="password">Password *</label>
             <button id="toggle-password" type="button" aria-label="Show password as plain text. 
                     Warning: this will display your password on the screen.">Show password</button>
             <input id="password" name="password" type="password" autocomplete="new-password" 
-                minlength="8" aria-describedby="password-constraints" required>
-            <div id="password-constraints"> <p>Eight or more characters.</p> <p>* Required</p></div>
+                minlength="8" aria-describedby="password-constraints" required placeholder="Eight or more characters.">
+            <div id="password-constraints">  <p>* Required</p></div>
         </section>
         <button id="sign-up">Sign up</button>
     </form>
@@ -80,6 +86,6 @@
     <img src="https://source.unsplash.com/random/1200x600">
 
 </section>
-
+<footer>footer stuff here</footer>
 </body>
 </html>
