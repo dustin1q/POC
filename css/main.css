@@ -66,12 +66,21 @@ section{
 
 
   #gallery {
+    background-color: #494949;
+
     scroll-snap-type: x mandatory;
-    width: 300px;
+    width: 310px;
     overflow-x: scroll;
     display: flex;
+
+    margin: auto;
+  
+  border: 1px solid #141414;
+  padding: 10px;
   }
   
   #gallery img {
      scroll-snap-align: center;
+     border: 1px solid #141414;
+     margin: 5px;
   }
