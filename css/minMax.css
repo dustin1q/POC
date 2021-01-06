@@ -6,14 +6,15 @@
 }
   .visual {
     height: 100px;
-    width: 100%;
+    
    /* aspect-ratio: 16 / 9;*/
     background: #000000 ;
     margin: 0.5rem 0;
+    padding: 1rem;
   }
   
   .card {
-    
+    flex-direction:column;
    
     background-color: #8a8585;
     padding: 1rem;
@@ -26,6 +27,11 @@
     width: clamp(23ch, 20%, 46ch);    
   }
   #card2 {
-    height: clamp(23ch, 20%, 23ch); 
+    width: clamp(23ch, 20%, 46ch);   
   }
-  
+#card2 p {
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

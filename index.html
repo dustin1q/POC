@@ -19,7 +19,7 @@
         <li>font-face  </li>
         <li>Content-visibility</li>
         <li>Portal tag best uses</li>
-        <li>Min, max, clamp </li>
+        <li>Min, Max, Clamp & Line Clamping</li>
         <li>Sign-in form Best Practices</li>
         <li>PWA</li>
     </ul>
@@ -57,17 +57,19 @@
 
     <hr>
 
-    <h3>Min, Max, Clamp</h3>
+    <h3>Min, Max, Clamp & Line clamping</h3>
     <div class="card-holder">
         <div class="card" id="card1">
             <h3>Card 1 Title Here</h3>
             <div class="visual">width: clamp(23ch, 20%, 46ch);</div>
-            <p contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+            <p class="cardDesc"contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
         </div>
         <div class="card" id="card2">
             <h3>Card 2 Title Here</h3>
-            <div class="visual"></div>
-            <p contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+            <div class="visual">-webkit-line-clamp: 3; and width: clamp(23ch, 20%, 46ch); </div>
+            <p class="cardDesc" contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
+                Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
+            </p>
         </div>
     </div>
 
