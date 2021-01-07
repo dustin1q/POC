@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Performance Testing Playground</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/form.css" rel="stylesheet" type="text/css">
@@ -58,16 +59,42 @@
     <hr>
 
     <h3>Min, Max, Clamp & Line clamping</h3>
+    <ul>
+        <li>Line Clamp Ref: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp">here</a></li>
+        <li>Min Max Clamp Ref: <a href="https://web.dev/min-max-clamp/">here</a></li>
+    </ul>  
     <div class="card-holder">
         <div class="card" id="card1">
-            <h3>Card 1 Title Here</h3>
-            <div class="visual">width: clamp(23ch, 20%, 46ch);</div>
-            <p class="cardDesc"contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+            <h3>Card 1</h3>
+            <div class="visual">
+                <ul>
+                    <li>-webkit-line-clamp: 2;</li>
+                    <li>width: clamp(23ch, 20%, 46ch);</li>
+                </ul>  
+            </div>
+            <p contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
         </div>
         <div class="card" id="card2">
-            <h3>Card 2 Title Here</h3>
-            <div class="visual">-webkit-line-clamp: 3; and width: clamp(23ch, 20%, 46ch); </div>
-            <p class="cardDesc" contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
+            <h3>Card 2</h3>
+            <div class="visual">
+                <ul>
+                    <li>-webkit-line-clamp: 3;</li>
+                    <li>width: min(100px, 25%, 50vh, 30ch); </li>
+                </ul>  
+            </div>
+            <p contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
+                Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
+            </p>
+        </div>
+        <div class="card" id="card3">
+            <h3>Card 3</h3>
+            <div class="visual">
+                <ul>
+                    <li>-webkit-line-clamp: 2;</li>
+                    <li>width: clamp(23ch, 20%, 46ch); </li>
+                </ul>  
+            </div>
+            <p contenteditable>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
                 Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.
             </p>
         </div>

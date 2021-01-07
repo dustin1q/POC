@@ -1,7 +1,8 @@
 /*Min Max Clamp stuff*/
 .card-holder{
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
   .visual {
@@ -14,24 +15,41 @@
   }
   
   .card {
-    flex-direction:column;
-   
     background-color: #8a8585;
     padding: 1rem;
-    margin: auto;
     border: 1px solid #141414;
     padding: 10px;  
     min-width: 200px;
+  }
+  .card ul{
+    list-style-type:none;
   }
   #card1 {
     width: clamp(23ch, 20%, 46ch);    
   }
   #card2 {
-    width: clamp(23ch, 20%, 46ch);   
+    width: min(100px, 25%, 50vh, 30ch);  
   }
+  #card3 {
+    width: clamp(23ch, 20%, 46ch);    
+  }
+
+
+#card3 p {
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
 #card2 p {
     display: -webkit-inline-box;
     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+#card1 p {
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
