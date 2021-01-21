@@ -50,21 +50,28 @@ button#sign-up {
   
   input {
     border: 1px solid #ccc;
-    padding: 10px;
-    width: 90%; 
+    width: 100%; 
     background-color: rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
   }
-  
+  input::placeholder {
+    color: #141414;
+    background: #ffffff;
+    padding: 10px;
+    width: 100%; 
+  }
   input:not(:focus):invalid {
     color: red;
     outline-color: red;
-    /*background-color: rgb(230, 192, 175);*/
+    background-color: rgb(230, 192, 175);
+   
     
   }
   input:not(:focus):valid {
     color: green;
     outline-color: green;
     background-color: rgb(175, 230, 175);
+    
   }
   
   label {
