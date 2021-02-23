@@ -126,7 +126,7 @@ footer{
     background-color: var(--medium-gray);
 
     scroll-snap-type: x mandatory;
-    width: 310px;
+    width: 750px;
     overflow-x: scroll;
     display: flex;
     margin: auto;
@@ -137,8 +137,8 @@ footer{
   
   #gallery img {
      scroll-snap-align: center;
-     border: 1px solid #141414;
-     margin: 5px;
+     
+
   }
 
 
