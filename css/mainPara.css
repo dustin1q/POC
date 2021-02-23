@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+:root {
+  --light-gray: rgb(92, 92, 92);
+  --medium-gray: #494949;
+  --dark-gray: rgb(54, 52, 52);
+}
+@font-face {
+    
+    ascent-override: 125%;
+    descent-override: 25%;
+    line-gap-override: 0%;
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf') format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'OswaldLite';
+    src: url('../fonts/Oswald/static/Oswald-Light.ttf') format("truetype");
+  }
+body{
+    background-color: var(--light-gray);
+    color: #ffffff;
+    font-family: "OswaldLite", Arial;
+
+
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+a{
+  color: #ffffff;
+}
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: "Oswald";
+}
+section{
+  width: 100%;
+  
+}
+#page-content{
+  margin:0px 10px 10px 10px;
+
+}
+
+#content-visible section{
+  content-visibility: auto;
+    contain-intrinsic-size: 500px; /* Acts as a placeholder size in lieu of rendered content.*/
+    /*https://web.dev/content-visibility/*/
+}
+#content-visible img{
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation stuff, you know ... that same old unorder listMcgee ///////////// */
+  nav{
+
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--dark-gray);
+    box-shadow: 0px 0px 3px 0px rgb(44, 44, 44);
+    
+  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  
+  width: auto;
+  height: 35px;
+}
+nav li {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  background: rgb(52, 53, 52);
+
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Navigation stuff, ends       ///////////// */
+footer{
+  height: 35px;
+  background-color: var(--dark-gray);
+  box-shadow: 0px 0px 3px 0px rgb(44, 44, 44);
+}
+
+/* I think I'll move this gallery stuff somewhere else later*/
+  #gallery {
+    background-color: var(--medium-gray);
+
+    scroll-snap-type: x mandatory;
+    width: 310px;
+    overflow-x: scroll;
+    display: flex;
+    margin: auto;
+    border: 1px solid #141414;
+    padding: 10px;
+    resize: both;
+  }
+  
+  #gallery img {
+     scroll-snap-align: center;
+     border: 1px solid #141414;
+     margin: 5px;
+  }
+
+
+
+  ::-webkit-resizer {
+    border: 2px solid #141414;
+    background: rgb(255, 255, 255);
+   /* box-shadow: 0 0 2px 5px rgb(44, 44, 44);*/
+    outline: 2px dashed rgb(97, 100, 97);
+}
