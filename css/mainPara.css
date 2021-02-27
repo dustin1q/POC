@@ -15,6 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
+    transform-style: preserve-3d;
 }
 
 :root {
@@ -122,25 +123,70 @@ footer{
 }
 
 /* I think I'll move this gallery stuff somewhere else later*/
-  #gallery {
-    background-color: var(--medium-gray);
+ 
+  /*#gallery::before {
+    background: url(../img/Custom-component-bkgnd.jpg) repeat;
+    background-attachment: fixed;
+    overflow-x:inherit;
+    content: '';
+    position: absolute;
+    width: 100vw;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+   animation: 3s ease 0s normal forwards 1 fadein;
+    animation-iteration-count: infinite;
+    
+    animation-name: MOVE-BG2;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
+  }*/
+
+  #gallery {
+    
+    background: url(../img/background-l1-mosaic.svg) repeat, #0071C5;
+    width: 90vw;
     scroll-snap-type: x mandatory;
-    width: 750px;
-    overflow-x: scroll;
+    overflow-x: auto;
     display: flex;
     margin: auto;
     border: 1px solid #141414;
     padding: 10px;
-    resize: both;
+    position: relative;
+    animation-name: MOVE-BG2;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
-  
   #gallery img {
+    z-index: 2;
      scroll-snap-align: center;
-     
 
   }
+  #gallery * {
+    position: relative;
+    z-index: 2;
+  }
 
+  @keyframes MOVE-BG2{
+    0% { background-position: 0% 0% }
+    50% { background-position: 187% 60% }
+    100% { background-position: 0% 0% }
+
+}
+@-webkit-keyframes MOVE-BG {
+    from {
+        background-position: 0% 0%
+    }
+    to { 
+        background-position: 187% 60%
+    }
+}
 
 
   ::-webkit-resizer {

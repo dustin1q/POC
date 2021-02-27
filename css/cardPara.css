@@ -15,10 +15,7 @@
   }
   
   .card {
-   /* background-color: var(--medium-gray);*/
-    padding: 1rem;
-    
-    padding: 10px;  
+    padding: 1rem; 
     min-width: 520px;
   }
   .card ul{
@@ -34,4 +31,47 @@
     width: clamp(23ch, 20%, 46ch);    
   }
 
+  .card2 {
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction:row;
+    align-items: flex-start;
+    background: #00A3F6;
+    margin: 2.5rem;
+    padding: 0; 
+    width: 600px;
+    height: 200px;
+    display: block;
+  }
+  .card2::after {
+        content: "+";
+        background: #00A3F6;
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        bottom: -2.5rem;
+        right: -2.5rem;
+        font-size: 3.5rem;
+        line-height: 0.7;
+        text-indent: .6rem;
+    }
+    .card2::after:hover {
+        background: #265b75;
+    }
 
+    .card-left {
+        margin: 0rem;
+        background: #265b75;
+        padding: 0; 
+        min-width: 200px;
+        display: block;
+      }
+      .card-right {
+        margin: 0rem;
+        background: #265b75;
+        min-width: 100px;
+        padding: 0; 
+        width: 50%;
+        display: block;
+      }
