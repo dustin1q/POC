@@ -179,7 +179,7 @@ footer{
     100% { background-position: 0% 0% }
 
 }
-@-webkit-keyframes MOVE-BG {
+@-webkit-keyframes MOVE-BG2 {
     from {
         background-position: 0% 0%
     }
